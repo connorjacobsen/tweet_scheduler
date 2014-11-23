@@ -20,7 +20,36 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Clone the application to your machine:
+```bash
+git clone https://github.com/connorjacobsen/tweet_scheduler.git
+```
+
+Make sure you have permission to execute the bin executable:
+```bash
+# from the application dir
+chmod +x bin/tweet
+```
+
+Add to your path:
+```bash
+export PATH=/path/to/application/bin:$PATH
+```
+
+You will also need to set environment variables for your Twitter application and account:
+```bash
+export CONSUMER_KEY=YOUR-TWITTER-CONSUMER-KEY
+export CONSUMER_SECRET=YOUR-TWITTER-CONSUMER-SECRET
+export ACCESS_TOKEN=YOUR-ACCESS-TOKEN
+export ACCESS_TOKEN_SECRET=YOUR-ACCESS-TOKEN-SECRET
+```
+
+Tweet away!
+```bash
+tweet Hello Twitter!!
+```
+
+I am currently working out some kinks on the ability to schedule tweets to be sent at a later date or time, so for now you can't do that :(
 
 ## Contributing
 
