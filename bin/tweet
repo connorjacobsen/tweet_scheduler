@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+begin
+  lib = File.expand_path(File.dirname(__FILE__) + '/../lib')
+  $LOAD_PATH.unshift(lib) if File.directory?(lib) && !$LOAD_PATH.include?(lib)
+  require 'tweet_scheduler'
+rescue LoadError
+  require 'rubygems'
+  require 'tweet_scheduler'
+end
+
+begin
+  TweetScheduler::Application.new(ARGV).run
+rescue Errno::ENOENT => err
+  $stderr.puts "tweet: #{err.message}"
+  exit(1)
+end
