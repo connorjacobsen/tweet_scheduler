@@ -1,22 +1,15 @@
 # TweetScheduler
 
-TODO: Write a gem description
+CLI for sending (and eventually scheduling) tweets.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'tweet_scheduler'
+Clone the application to your machine:
+```bash
+git clone https://github.com/connorjacobsen/tweet_scheduler.git
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install tweet_scheduler
+You don't yet want to `gem install` this gem.
 
 ## Usage
 
